@@ -45,13 +45,5 @@
             android:text="test"
             android:textColor="@color/white" />
 
-        <TextView
-            android:id="@+id/elTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:background="#00000000"
-            android:text="test"
-            android:textColor="@color/white" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
