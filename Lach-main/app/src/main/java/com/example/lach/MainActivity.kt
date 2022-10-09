@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(),ListAdapter.ClickListener {
         binding.bottomMenu.setOnNavigationItemSelectedListener {
             when (it.itemId)
             {
-                R.id.adminPanel ->
+                R.id.adminPanell ->
                 {
                     val admin = Intent(this, RegAvtorization::class.java)
                     startActivity(admin)

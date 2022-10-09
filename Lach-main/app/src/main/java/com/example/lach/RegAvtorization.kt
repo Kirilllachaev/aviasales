@@ -15,7 +15,7 @@ class RegAvtorization : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegAvtorizationBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.signRegBottomMenu.selectedItemId=R.id.adminPanel
+        binding.signRegBottomMenu.selectedItemId=R.id.adminPanell
 
         binding.signRegBottomMenu.setOnNavigationItemSelectedListener {
             when (it.itemId) {

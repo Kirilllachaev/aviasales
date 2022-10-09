@@ -67,7 +67,7 @@
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:background="#4C4C4C"
-        android:text="Купить"
+        android:text="В избранное"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

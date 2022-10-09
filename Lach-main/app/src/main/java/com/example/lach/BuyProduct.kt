@@ -28,11 +28,11 @@ class BuyProduct : AppCompatActivity() {
             database.child("Basket").addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if(snapshot.child(id).child(kino?.name.toString()).exists()){
-                        Toast.makeText(this@BuyProduct,"У вас уже есть товар", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@BuyProduct,"Уже в избранном", Toast.LENGTH_LONG).show()
                     }
                     else{
                         database.child("Basket").child(id).child(kino?.name.toString()).setValue(shop)
-                        Toast.makeText(this@BuyProduct,"Вы купили товар", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@BuyProduct,"Добавлено в избранное", Toast.LENGTH_LONG).show()
                     }
                 }
 

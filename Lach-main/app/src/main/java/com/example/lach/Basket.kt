@@ -38,7 +38,7 @@ class Basket : AppCompatActivity() {
                     }
 
                 }
-                R.id.adminPanel->
+                R.id.adminPanell->
                 {
                     val admin = Intent(this, RegAvtorization::class.java)
                     startActivity(admin)
