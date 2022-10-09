@@ -9,14 +9,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#1E1E1E">
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/signRegBottomMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#3A0470"
+            android:background="#000000"
             app:itemIconSize="45dp"
 
             app:itemIconTint="@drawable/selector"
@@ -30,10 +31,12 @@
 
         <Button
             android:id="@+id/sing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#A52A2A"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:background="#4C4C4C"
             android:text="Вход"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/signRegBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -43,10 +46,12 @@
 
         <Button
             android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#A52A2A"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:background="#4C4C4C"
             android:text="Регистрация"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/signRegBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -61,6 +66,8 @@
             android:ems="10"
             android:hint="Телефон"
             android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/signRegBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -75,6 +82,8 @@
             android:ems="10"
             android:hint="Пароль"
             android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/signRegBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"

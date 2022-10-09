@@ -15,6 +15,7 @@
             android:id="@+id/recTickets"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="#1E1E1E"
             app:layout_constraintBottom_toTopOf="@+id/ticketBottomMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +25,7 @@
             android:id="@+id/ticketBottomMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#A52A2A"
+            android:background="#000000"
             app:itemIconSize="45dp"
 
             app:itemIconTint="@drawable/selector"
@@ -35,6 +36,21 @@
             app:menu="@menu/bottom_menu">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <Button
+            android:id="@+id/logoutid"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#4C4C4C"
+            android:text="Выйти"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/ticketBottomMenu"
+            app:layout_constraintEnd_toStartOf="@+id/recTickets"
+            app:layout_constraintHorizontal_bias="0.163"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

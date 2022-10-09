@@ -4,10 +4,10 @@
         android:icon="@drawable/ic_baseline_home_work_24"
         android:title=""
         android:orderInCategory="1"/>
-    <item android:id="@+id/adminPanel"
-        android:icon="@drawable/ic_baseline_construction_24"
-        android:title=""
-        android:orderInCategory="2"/>
+    <item
+        android:id="@+id/adminPanel"
+        android:orderInCategory="2"
+        android:title="" />
     <item android:id="@+id/basket"
         android:icon="@drawable/ic_baseline_shopping_bag_24"
         android:title=""

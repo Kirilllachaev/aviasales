@@ -21,7 +21,7 @@ class WorkZone : AppCompatActivity(),ListAdapter.ClickListener {
         binding = ActivityWorkZoneBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.workZoneBottomMenu.selectedItemId = R.id.adminPanel
+        binding.workZoneBottomMenu.selectedItemId = R.id.home
         binding.workZoneBottomMenu.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

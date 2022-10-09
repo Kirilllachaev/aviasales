@@ -17,12 +17,16 @@ class MainActivity : AppCompatActivity(),ListAdapter.ClickListener {
         setContentView(binding.root)
 
         binding.bottomMenu.setOnNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.adminPanel -> {
+            when (it.itemId)
+            {
+                R.id.adminPanel ->
+                {
                     val admin = Intent(this, RegAvtorization::class.java)
                     startActivity(admin)
                 }
-                R.id.basket->{
+
+                R.id.basket->
+                {
                     val admin = Intent(this, Basket::class.java)
                     startActivity(admin)
                 }

@@ -4,91 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A52A2A"
+    android:background="#1E1E1E"
     tools:context=".Add">
 
     <EditText
         android:id="@+id/addName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Название"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.455" />
 
     <EditText
         android:id="@+id/addDesc"
-        android:layout_width="294dp"
-        android:layout_height="128dp"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Описание"
 
         android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.543" />
 
     <EditText
         android:id="@+id/addPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Цена"
 
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.631" />
 
     <EditText
         android:id="@+id/addLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Картинка"
 
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532" />
+        app:layout_constraintVertical_bias="0.725" />
 
     <ImageView
         android:id="@+id/addImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736"
+        app:layout_constraintVertical_bias="0.136"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/addMovie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#EC0033"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:background="#4C4C4C"
         android:text="Добавить"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintVertical_bias="0.879" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

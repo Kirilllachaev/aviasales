@@ -15,20 +15,42 @@ class Basket : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBasketBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        if(userModel.currentuser == null){
+            startActivity(Intent(this,RegAvtorization::class.java))
+        }
         binding.ticketBottomMenu.selectedItemId = R.id.basket
         binding.ticketBottomMenu.setOnNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.home -> {
-                    val home = Intent(this, MainActivity::class.java)
-                    startActivity(home)
+            when (it.itemId)
+            {
+                R.id.home ->
+                {
+                    if(userModel?.currentuser?.status == "Admin")
+                    {
+                        val home = Intent(this, WorkZone::class.java)
+                        startActivity(home)
+                    }
+                    else
+                    {
+                        val home = Intent(this, MainActivity::class.java)
+                        startActivity(home)
+                    }
+
                 }
-                R.id.adminPanel->{
+                R.id.adminPanel->
+                {
                     val admin = Intent(this, RegAvtorization::class.java)
                     startActivity(admin)
                 }
             }
 
             true
+        }
+
+        binding.logoutid.setOnClickListener {
+            startActivity(Intent(this,RegAvtorization::class.java))
+            userModel.currentuser = null;
         }
 
         binding.recTickets.layoutManager= LinearLayoutManager(this)
@@ -54,8 +76,12 @@ class Basket : AppCompatActivity() {
         return List
     }
 
-    override fun onStart() {
+    override fun onStart()
+    {
+
         super.onStart()
         ListAdapter?.loadListToAdapter(getData())
+
+
     }
 }
